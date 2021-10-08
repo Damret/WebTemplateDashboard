@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />  
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.11.1/datatables.min.css"/>
+
+    <title>Dashboard | Admin</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-2 primary-bg" style="min-height: 100vh;">
+          <div class="sidebar position-fixed">
+            <nav>
+              <div class="logo border-bottom text-center">
+                <a class="navbar-brand pt-5 pb-3 text-uppercase " href="#">
+                  Logo.
+                </a>
+              </div>
+              <ul class="nav flex-column mt-4">
+                <li class="nav-item">
+                  <a class="nav-link  menu" href="./index.html"><i class="fas fa-tachometer-alt"></i>Dashboard</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link  menu" href="analytics.html"><i class="fas fa-chart-line"></i>Analytics</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="nav-link dropdown-toggle menu"><i class="fas fa-users"></i>Users</a>
+                  <ul class="collapse list-unstyled" id="homeSubmenu">
+                      <li>
+                          <a class="nav-link pl-4" href="./user.html"> <i class="fas fa-user-cog"></i>User Data</a>
+                      </li>
+                      <li>
+                          <a class="nav-link pl-4" href="user-setting.html"> <i class="fas fa-user-minus"></i>Edit User</a>
+                      </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link menu" href="maps.html"><i class="fas fa-map"></i>Maps</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <div class="col-lg-10 isi">
+          <div class="row pt-3 navbar bg-white">
+            <div class="col-12 p-0">
+              <nav class="navbar-expand navbar-light px-0 align-items-center">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <form class="form-inline my-2 my-lg-0">
+                    <span class="inputSymbol">
+                      <i class="fas fa-search"></i>
+                    </span>
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                  </form>
+                  <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-bell"></i>
+                        Admin
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Profile</a>
+                        <a class="dropdown-item" href="#">Settings</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Logout</a>
+                      </div>
+                    </li>
+                </div>
+              </nav>
+            </div>
+          </div>
+          <div class="container-fluid px-4 mt-5">
+            <section>
+              <div class="row g-3 my-2">
+                <div class="col-md-3">
+                  <div class="p-3 text-white primary-bg shadow-sm d-flex justify-content-lg-around align-items-center rounded">
+                    <div>
+                      <h3 class="font-weight-bold mb-0">2500</h3>
+                      <p class="mb-0">Total User</p>
+                    </div>
+                    <i class="fas fa-users fs-1 border rounded-circle p-3"></i>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="p-3 text-white primary-bg shadow-sm d-flex justify-content-lg-around align-items-center rounded">
+                    <div>
+                      <h3 class="font-weight-bold mb-0">500</h3>
+                      <p class="mb-0">New User</p>
+                    </div>
+                    <i class="fas fa-user-plus fs-1 border rounded-circle p-3"></i>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="p-3 text-white primary-bg shadow-sm d-flex justify-content-lg-around align-items-center rounded">
+                    <div>
+                      <h3 class="font-weight-bold mb-0">10000</h3>
+                      <p class="mb-0">Pageviews</p>
+                    </div>
+                    <i class="fas fa-eye fs-1 border rounded-circle p-3"></i>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="p-3 text-white primary-bg shadow-sm d-flex justify-content-lg-around align-items-center rounded">
+                    <div>
+                      <h3 class="font-weight-bold mb-0">40%</h3>
+                      <p class="mb-0">Bounce Rate</p>
+                    </div>
+                    <i class="fas fa-check fs-1 border rounded-circle p-3"></i>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section>
+              <div class="row my-5">
+                <div class="col">
+                  <h3 class="mb-3 primary-color font-weight-bold">All User</h3>
+                <table class="table table-fluid bg-white rounded shadow-sm  table-hover" id="table_id">
+                    <thead class="primary-bg text-white">
+                        <tr>
+                            <th scope="col" width="50">#</th>
+                            <th scope="col">User</th>
+                            <th scope="col">Email</th>
+                            <th scope="col">Created</th>
+                            <th scope="col">Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Jonny</td>
+                            <td>kacletme@vu.yt</td>
+                            <td>12/07/2021</td>
+                            <td>Online</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Connor Kelly</td>
+                            <td>owu@kit.cw</td>
+                            <td>15/06/2021</td>
+                            <td>Online</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Evan Carpenter</td>
+                            <td>nuzo@alaajo.eu</td>
+                            <td>19/09/2021</td>
+                            <td>Online</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>Ian Lewis</td>
+                            <td>idu@ruji.al</td>
+                            <td>03/08/2021</td>
+                            <td>Online</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">5</th>
+                            <td>Edna Keller</td>
+                            <td>hebunmi@isbapto.sv</td>
+                            <td>02/03/2021</td>
+                            <td>Online</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">6</th>
+                            <td>Lily Myers</td>
+                            <td>hiriw@alogno.ad</td>
+                            <td>18/10/2021</td>
+                            <td>Online</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">7</th>
+                            <td>Curtis Mullins</td>
+                            <td>wic@pairefu.vu</td>
+                            <td>19/11/2021</td>
+                            <td>Online</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">8</th>
+                            <td>Mattie Barnett</td>
+                            <td>pungelu@le.cc</td>
+                            <td>08/04/2021</td>
+                            <td>Online</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">9</th>
+                            <td>Adele Huff</td>
+                            <td>numibot@paaruag.kw</td>
+                            <td>23/05/2021</td>
+                            <td>Online</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">10</th>
+                            <td>Bertha Nunez</td>
+                            <td>kekbaro@famot.nu</td>
+                            <td>22/10/2021</td>
+                            <td>Online</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">11</th>
+                            <td>Edith Norman</td>
+                            <td>de@saw.la</td>
+                            <td>06/12/2021</td>
+                            <td>Online</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">12</th>
+                            <td>Edith Norman</td>
+                            <td>de@saw.la</td>
+                            <td>06/12/2021</td>
+                            <td>Online</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">13</th>
+                            <td>Lily Peters</td>
+                            <td>joona@nowab.br</td>
+                            <td>01/10/2021</td>
+                            <td>Online</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">14</th>
+                            <td>Beatrice Schultz</td>
+                            <td>tabah@gafa.kg</td>
+                            <td>08/11/2021</td>
+                            <td>Online</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">15</th>
+                            <td>Troy Medina</td>
+                            <td>ih@vo.re</td>
+                            <td>30/01/2021</td>
+                            <td>Online</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">16</th>
+                            <td>Angel Christensen</td>
+                            <td>tobilro@ujufuze.hu</td>
+                            <td>01/06/2021</td>
+                            <td>Online</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">17</th>
+                            <td>Winnie Watkins</td>
+                            <td>wadkaz@to.cc</td>
+                            <td>29/12/2021</td>
+                            <td>Online</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">18</th>
+                            <td>Gertrude Warren</td>
+                            <td>ejleva@efjibbi.bb</td>
+                            <td>02/02/2021</td>
+                            <td>Online</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">19</th>
+                            <td>Keith Simpson</td>
+                            <td>merworbic@isu.sx</td>
+                            <td>17/08/2021</td>
+                            <td>Online</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">20</th>
+                            <td>Edgar Guerrero</td>
+                            <td>pih@cifhag.ru</td>
+                            <td>26/03/2021</td>
+                            <td>Online</td>
+                        </tr>
+                    </tbody>
+                </table>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.11.1/datatables.min.js"></script>
+    <script>
+    $('#table_id').DataTable( {
+     searching: false,
+     ordering:false
+    } );
+    </script>
+
+  </body>
+</html>

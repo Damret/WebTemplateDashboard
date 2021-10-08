@@ -1,0 +1,74 @@
+.atas {
+    background-color: #3B5998;
+    padding: 20px;
+    border-radius: 15px 15px 0 0 ;
+}
+
+.atas1 {
+    background-color: #00ACED ; 
+    padding: 20px;
+    border-radius: 15px 15px 0 0 ;
+}
+
+.atas2 {
+    background-color: #4875B4 ; 
+    padding: 20px;
+    border-radius: 15px 15px 0 0 ;
+}
+
+.social {
+    color: white;
+}
+
+.col-md-4 i {
+    font-size: 30px ;
+}
+
+
+.form-control {
+    padding: 0 30px 0 35px;
+}
+
+.inputSymbol {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding-left: 10px;
+    font-size: 15px;
+    pointer-events: none;
+}
+
+.v1 {
+  border-left: 1px solid black;
+  height: 50px;
+}
+
+.text-secondary {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.text-secondary::before {
+    content: '';
+    display: block;
+    border-bottom: 1px solid #3B5998;
+    width: 50%;
+    margin: auto;
+}
+
+.progress {
+    width: 75%;
+    height: 50%;
+}
+
+.atasa {
+    margin-top: -15px;
+}
+
+.bawah {
+    border-radius: 0 0 15px 15px;
+}

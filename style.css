@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.primary-color {
+    color: #FF4646;
+}
+
+.primary-bg {
+    background-color: #fff;
+}
+
+.isi {
+    background-color: #F6F6F6;
+}
+
+a {
+    color: #FF4646;
+}
+
+.sidebar nav a.navbar-brand {
+    font-size: 23px;
+    font-weight: 800;
+    color: #FF4646;
+}
+
+.sidebar>nav {
+    width: 180px;
+}
+
+.brand2 {
+    font-size: 14px;
+    font-weight: 300;
+    padding: 10px 10px 0 10px;
+} 
+.menu {
+    font-size: 14px;
+    font-weight: 700;
+    padding: 10px;
+}
+.nav-link {
+    width: 100%;
+    border-radius: 5px;
+}
+.nav-link:hover {
+    background-color: #FF4646;
+    color: #fff;
+}
+.nav-link i {
+    padding: 0 15px 0 0;
+}
+.nav-link i.booking {
+    padding: 0 16px 0 2px;
+}
+a.nav-link.dropdown-toggle::after {
+    margin: 0 0 0 10px;
+}
+
+.nav>.nav-item {
+    padding: 10px 10px;
+}
+
+.navbar {
+    height: 100px;
+    padding: 0 30px;
+}
+
+.main .card {
+    height: 100% !important;
+}
+
+.card-header {
+    background-color: #FF4646 !important;
+    color: #fff;
+}
+
+.stats {
+    height: 100%;
+}
+.badges {
+    height: 50%;
+}
+
+.useractive {
+    height: 100%;
+}
+
+.recentpost {
+    height: 100% !important;
+}
+
+.card {
+    border: 0;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, .1);
+    max-height: 100%;
+}
+
+.card-header {
+    background: #fff;
+    font-weight: 700;
+    padding: 20px;
+}
+
+textarea {
+    resize: none;
+}
+
+.inputSymbol {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding-left: 10px;
+    font-size: 15px;
+    pointer-events: none;
+}
+
+.form-control {
+    padding: 0 30px 0 35px;
+}
+
+.card {
+    border-radius: 15px !important;
+}
+
+.card-header {
+    border-radius: 15px 15px 0 0 !important;
+}
+
+.list-group {
+    border-radius: 15px !important;
+}
+
+.col-md-9>.card-body {
+    padding-top: 0;
+}
+
+.embed-responsive {
+    height: 100% !important;
+}
+
+.card_1 {
+    background: transparent linear-gradient(112deg,#FE7379 0%,#F54EA1 100%) 0% 0% no-repeat padding-box;
+}
+
+.tinggi {
+    height: 90%;
+}
