@@ -2,19 +2,19 @@ var ctx = document.getElementById('myChart');
 var myChart = new Chart(ctx, {
     type: 'doughnut',
     data: {
-        labels: ['April', 'Mei', 'Juni'],
+        labels: ['In Progress', 'Completed', 'Yet to Start'],
         datasets: [{
             label: 'Page Views',
-            data: [2500, 2000, 3000],
+            data: [5, 7, 3],
             backgroundColor: [
-                'rgba(255, 99, 132)',
-                'rgba(54, 162, 235)',
-                'rgba(255, 206, 86)',
+                'rgb(253,53,61)',
+                'rgb(33,149,83)',
+                'rgb(189,189,189)',
             ],
             borderColor: [
-                'rgba(255, 99, 132)',
-                'rgba(54, 162, 235)',
-                'rgba(255, 206, 86)',
+                'rgb(253,53,61)',
+                'rgb(33,149,83)',
+                'rgb(189,189,189)',
             ],
             borderWidth: 1
         }]
@@ -63,17 +63,17 @@ var ctx = document.getElementById('myChart3');
 var myChart = new Chart(ctx, {
     type: 'bar',
     data: {
-        labels: ['April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September'],
+        labels: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
         datasets: [{
-            label: 'Page Views',
-            data: [2500, 2000, 3000, 3300, 4000, 3800],
+            label: 'Hours Spent',
+            data: [5, 10, 4, 7, 3, 2,5],
             backgroundColor: [
-                'rgba(255, 99, 132, 0.2)',
-                'rgba(54, 162, 235, 0.2)',
-                'rgba(255, 206, 86, 0.2)',
-                'rgba(75, 192, 192, 0.2)',
-                'rgba(153, 102, 255, 0.2)',
-                'rgba(255, 159, 64, 0.2)'
+                'rgb(255, 99, 132)',
+                'rgb(54, 162, 235)',
+                'rgb(255, 206, 86)',
+                'rgb(75, 192, 192)',
+                'rgb(153, 102, 255)',
+                'rgb(255, 159, 64)'
             ],
             borderColor: [
                 'rgba(255, 99, 132, 1)',
@@ -99,17 +99,17 @@ var ctx = document.getElementById('myChart4');
 var myChart = new Chart(ctx, {
     type: 'bar',
     data: {
-        labels: ['April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September'],
+        labels: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
         datasets: [{
-            label: 'Page Views',
-            data: [2500, 2000, 3000, 3300, 4000, 3800],
+            label: 'Hours Spent',
+            data: [5, 10, 4, 7, 3, 2,5],
             backgroundColor: [
-                'rgba(255, 99, 132, 0.2)',
-                'rgba(54, 162, 235, 0.2)',
-                'rgba(255, 206, 86, 0.2)',
-                'rgba(75, 192, 192, 0.2)',
-                'rgba(153, 102, 255, 0.2)',
-                'rgba(255, 159, 64, 0.2)'
+                'rgb(255, 99, 132)',
+                'rgb(54, 162, 235)',
+                'rgb(255, 206, 86)',
+                'rgb(75, 192, 192)',
+                'rgb(153, 102, 255)',
+                'rgb(255, 159, 64)'
             ],
             borderColor: [
                 'rgba(255, 99, 132, 1)',

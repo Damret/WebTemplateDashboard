@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />  
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-settingUser.css">
+    <title>Dashboard | Admin</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-2 primary-bg" style="height: auto;">
+          <div class="sidebar position-fixed">
+            <nav>
+              <div class="logo border-bottom text-center">
+                <a class="navbar-brand pt-5 pb-3 text-uppercase " href="#">
+                  NGAWULANG
+                </a>
+              </div>
+              <ul class="nav flex-column mt-4">
+                <li class="nav-item tes">
+                  <a class="nav-link active menu" href="./index.html"><i class="fas fa-tachometer-alt"></i>Dashboard</a>
+                </li>
+                <li class="nav-item tes">
+                  <a class="nav-link active menu" href="courses.html"><i class="fas fa-chart-line"></i>Courses</a>
+                </li>
+                <li class="nav-item tes">
+                  <a class="nav-link menu" href="forum.html"><i class="fas fa-map"></i>Forum</a>
+                </li>
+                <li class="nav-item tes">
+                  <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="nav-link dropdown-toggle menu fw-bold"><i class="fas fa-users"></i>Settings</a>
+                  <ul class="collapse list-unstyled" id="homeSubmenu">
+                    <li class="tes">
+                      <a class="nav-link pl-4" href="./setting-profile.html"> <i class="fas fa-user-cog"></i>Profile</a>
+                  </li>
+                  <li class="tes">
+                      <a class="nav-link pl-4" href="setting-course.html"> <i class="fas fa-user-minus"></i>Courses</a>
+                  </li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <div class="col-lg-10 isi">
+          <div class="row pt-3 navbar">
+            <div class="col-12 p-0">
+              <nav class="navbar-expand navbar-light px-0 align-items-center">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <form class="form-inline my-2 my-lg-0">
+                    <span class="inputSymbol">
+                      <i class="fas fa-search"></i>
+                    </span>
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                  </form>
+                  <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-bell"></i>
+                        Dharma
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="https://damret.github.io/TAWebsiteTemplate/#">Logout</a>
+                      </div>
+                    </li>
+                </div>
+              </nav>
+            </div>
+          </div>
+          <div class="container-fluid px-4 mt-5">
+            <div class="card user-wrapper">
+              <h4 class="user-tittle primary-color">USER PROFILE</h4>
+              <div class="form-group">
+                <label class="control-label text-uppercase font-weight-bold">user photo</label>
+                <div class="row">
+                  <div class="col-md-2">
+                    <img src="https://d17ivq9b7rppb3.cloudfront.net/small/avatar/2021083113434401600ecb8278f93151b5a195ed0a09de.png" alt="" class="img-fluid rounded">
+                  </div>
+                  <div class="col-md-10">
+                    <div class="file btn btn-danger">
+                      <input type="file" name="file">
+                    </div>
+                    <div class="small">
+                      Your Profile Image should have a ratio of 1:1
+                      <br>
+                       and no more than 2MB in size.
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group form-row">
+                <div class="col-md-9">
+                  <label for="name" class="control-label">Full Name <span class="text-danger">*</span></label>
+                  <input type="text" class="form-control" value="Dharma Saputra" required>
+                </div>
+              </div>
+              <div class="form-group form-row">
+                <div class="col-md-9">
+                  <label for="name" class="control-label">Username <span class="text-danger">*</span></label>
+                  <input type="text" class="form-control" value="Dsaputra" required>
+                </div>
+              </div>
+              <div class="form-group form-row">
+                <div class="col-md-9">
+                  <label for="name" class="control-label">Email<span class="text-danger">*</span></label>
+                  <input type="email" class="form-control" value="Dsaputra2500@gmail.com" required>
+                </div>
+              </div>
+                <div class="form-group form-row">
+                  <div class="col-md-9">
+                    <label for="name" class="control-label">Phone <span class="text-danger">*</span></label>
+                    <input type="number" class="form-control" value="085432109876" required>
+                  </div>
+                </div>
+                <div class="form-group form-row">
+                  <div class="col-md-9">
+                    <label for="name" class="control-label">My Occupation <span class="text-danger">*</span></label>
+                    <div class="input-group">
+                      <select class="custom-select" id="inputGroupSelect04" aria-label="Example select with button addon">
+                        <option selected>Choose Occupation</option>
+                        <option value="1">High School</option>
+                        <option value="2">University</option>
+                        <option value="3">Work</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group form-row">
+                  <div class="col-md-9">
+                    <label for="name" class="control-label">City<span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" value="Sukabumi" required>
+                  </div>
+                </div>
+                <div class="mt-5">
+                  <button type="submit" class="btn btn-danger px-3">Save Changes</button>
+                </div>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+  </body>
+</html>

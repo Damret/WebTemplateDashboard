@@ -1,0 +1,21 @@
+.banner {
+    border: 1px solid #000;
+    border-radius: 15px;
+}
+
+.courseClass {
+    font-size: 14px;
+}
+
+.courseLesson {
+    font-weight: bold;
+}
+
+.courseDesc {
+    font-size: 12px;
+}
+
+.banner {
+    border: 1px solid #000;
+    border-radius: 15px;
+}
